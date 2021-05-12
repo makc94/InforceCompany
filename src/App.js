@@ -49,9 +49,9 @@ export default function App() {
 
   const [list, setList] = useState(initialList);
 
-  const addItem = () => {
-    setList(...list, list.concat("turtle"));
-  };
+//   const addItem = () => {
+//     setList(...list, list.concat("turtle"));
+//   };
 
   const sortByCount = () => {
     const sorted = [...list].sort((a, b) => {
@@ -109,9 +109,9 @@ export default function App() {
     <div className="container">
       <div className="row">{listProducts}</div>
       <div className="row row-cols-auto">
-        <button className="btn btn-success col but" onClick={addItem}>
-          New
-        </button>
+//         <button className="btn btn-success col but" onClick={addItem}>
+//           New
+//         </button>
         <button className="btn btn-success col but" onClick={sortByCount}>
           Sort by count:
         </button>
